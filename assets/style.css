@@ -4,9 +4,16 @@ body {
     font-size: 20px;
 }
 
+/* this class will hide elements. This will be used in the javascript. */
+.hide {
+    display: none;
+}
+
+
 .score-timer {
     color: white;
     background-color: violet;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -25,6 +32,42 @@ body {
 
 }
 
+.start-page {
+    background-color: #A8F2FB;
+    margin-top: 175px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.space-quiz {
+    font-size: 150%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.start-page-text {
+    width: 50%;
+    font-size: 120%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.start-quiz {
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.start-quiz:hover {
+    background-color: violet;
+    color: white;
+}
 .question-container {
     margin-top: 200px;
 }
