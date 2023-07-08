@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.score-timer {
+    color: white;
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.high-score {
+    text-decoration: underline;
+}
+
+.main-area {
+    margin-top: -70px;
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.question-container {
+    margin-top: 200px;
+}
+
+.questions {
+    font-size: 150%;
+}
+
+.options-container {
+    list-style-type: none;
+}
+
+.options {
+    background-color:violet;
+    color: white;
+    width: 120px;
+    padding: 5px;
+    margin: 10px -40px;
+    border-radius: 7px;
+    font-size: 100%;
+}
+
+.options:hover {
+    background-color: lightblue;
+}
+
+.right-wrong {
+    color: lightslategray;
+    font-style: italic;
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+}
+
+.space-footer {
+    /* margin-top: 160px; */
+    height: 85px;
+    background-image: url(./images/Purple-Planets.jpg);
+    /* position: absolute; */
+    bottom: 0px
+}
