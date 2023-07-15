@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
+    <!-- top of the page that contains score and timer. -->
     <header id="score-timer" class="score-timer">
         <h4 id="high-score" class="high-score hide">View high scores</h4>
-        <h4 id="timer" class="timer hide">Time: 60</h4>
+        <h4 id="timer" class="timer hide">Time: <span id="time">60</span></h4>
     </header>
+    <!-- mains section of the page that will have the quiz questions and prompts inside. -->
     <main id="main-area" class="main-area">
+        <!-- start page of the quiz -->
         <section id="start-page" class="start-page">
             <h2 id="space-quiz" class="space-quiz">Welcome to the Space Quiz!</h2>
             <p class="start-page-text">How much do you know about space? Let's find out!
@@ -22,17 +25,75 @@
             </p>
             <h4 id="start-quiz" class="start-quiz">Start Quiz!</h4>
         </section>
+        <!-- Questions -->
         <section id="question-container" class="question-container hide">
-        <h1 id="questions" class="questions">Here is an example of a question about space.</h1>
-            <ul id="options-container" class ="options-container">
-                <li id="option-one" class="options">Option One</li>
-                <li id="option-two" class="options">Option Two</li>
-                <li id="option-three" class="options">Option Three</li>
-                <li id="option-four" class="options">Option Four</li>
-            </ul>
-        <div>
-            <h2 id="right-wrong" class="right-wrong">Correct!</h2>
+        <!-- Question One -->
+        <div id="question-one">
+            <h1 class="questions">Which one of these is not a planet?</h1>
+                <ul id="options-container" class ="options-container">
+                    <li id="q1-o1" class="options">Jupiter</li>
+                    <li id="q1-o2" class="options">Mars</li>
+                    <li id="q1-o3" class="options">Pluto</li>
+                    <li id="q1-o4" class="options">Venus</li>
+                </ul>
         </div>
+        <div id="question-two" class="hide">
+            <h1 class="questions">How many moons are in our solar system?</h1>
+                <ul id="options-container" class ="options-container">
+                    <li id="q2-o1" class="options">290</li>
+                    <li id="q2-o2" class="options">340</li>
+                    <li id="q2-o3" class="options">120</li>
+                    <li id="q2-o4" class="options">85</li>
+                </ul>
+        </div>
+        <div id="question-three" class="hide">
+            <h1 class="questions">What is the sun made out of?</h1>
+                <ul id="options-container" class ="options-container">
+                    <li id="q3-o1" class="options">Fire</li>
+                    <li id="q3-o2" class="options">Light</li>
+                    <li id="q3-o3" class="options">Gas</li>
+                    <li id="q3-o4" class="options">Plasma</li>
+                </ul>
+        </div>
+        <div id="question-four" class="hide">
+            <h1 class="questions">How old is the Earth?</h1>
+                <ul id="options-container" class ="options-container">
+                    <li id="q4-o1" class="options">828 million years</li>
+                    <li id="q4-o2" class="options">4.5 billion years</li>
+                    <li id="q4-o3" class="options">9.2 billion years</li>
+                    <li id="q4-o4" class="options">590 thousand years</li>
+                </ul>
+        </div>
+        <div>
+            <h2 id="right" class="right-wrong hide">Correct!</h2>
+            <h2 id="wrong" class="right-wrong hide">Wrong.</h2>
+        </div>
+        </section>
+        <!-- this page is whre you get your score and enter the initials -->
+        <section id="initial-page" class="initial-page">
+            <div id="initial-page-hide" class="hide">
+            <h1>Thanks for taking the quiz!</h1>
+            <h2 class="final-score">Your final score is <span id="final-score">""</span></h2>
+            <div class="form">
+            <form onsubmit="stopSubmit()">
+                <label for="initials" class="initials">Enter your initials:</label>
+                <input type="text" id="initials" name="initials">
+            </form>
+            <h2 id="initial-submit" class="submit">Submit</h2>
+            </div>
+            </div>
+        </section>
+        <section id="high-score-page" class="high-score-page">
+            <div id="high-score-page-hide" class="hide">
+            <h1 class="high-scores">High Scores</h1>
+                <ul id="score-list" class="score-list">
+                    <!-- <li id="score-list" class="scores">First score</li> -->
+                </ul>
+            <div class="buttons">
+                <h2 id="play-btn" class="btn">Go back</h2>
+                <h2 id="clear-score-btn" class="btn">Clear high scores</h2>
+            </div>
+            </div>
         </section>
     </main>
     <footer class="space-footer">
