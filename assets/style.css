@@ -9,7 +9,7 @@ body {
     display: none;
 }
 
-
+/* classes for the top of the page */
 .score-timer {
     color: white;
     background-color: violet;
@@ -23,6 +23,7 @@ body {
     text-decoration: underline;
 }
 
+/* class for the main area of the page */
 .main-area {
     margin-top: -70px;
     margin-bottom: 160px;
@@ -32,6 +33,7 @@ body {
 
 }
 
+/* start page */
 .start-page {
     background-color: #A8F2FB;
     margin-top: 175px;
@@ -68,6 +70,8 @@ body {
     background-color: violet;
     color: white;
 }
+
+/* question pages */
 .question-container {
     margin-top: 200px;
 }
@@ -101,10 +105,84 @@ body {
     border-width: 3px 0px 0px 0px;
 }
 
+/* footer of the page */
 .space-footer {
     /* margin-top: 160px; */
     height: 85px;
     background-image: url(./images/Purple-Planets.jpg);
     /* position: absolute; */
     bottom: 0px
+}
+
+/* initial-page */
+.initial-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 240px;
+    margin-bottom: 100px;
+}
+
+.final-score {
+    font-size: 100%;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.submit {
+    background-color: violet;
+    color: white;
+    font-size: 100%;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    padding: 7px;
+    border-radius: 7px;
+
+
+}
+
+.initials {
+    display: inline;
+    font-weight: bold;
+}
+
+/* score page */
+.high-score-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 240px;
+}
+
+.high-scores {
+    margin-bottom: 10px;
+}
+
+.score-list {
+    list-style-type: none;
+    margin-left: -40px;
+    margin-bottom: 40px;
+}
+
+.scores {
+    background-color: lightyellow;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    font-size: 100%;
+    background-color: violet;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    margin-bottom: 55px;
 }
