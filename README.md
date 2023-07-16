@@ -7,7 +7,7 @@ This project is a timed quiz that asks you questions about space! I wanted to bu
 ## Usage
 
 Here is the link to the website:
-![Space Quiz](https://breeprimmer.github.io/Space-Quiz/)
+<a href="https://breeprimmer.github.io/Space-Quiz/">
 
 To play the quiz, press the "Start Quiz!" button on the starting page.
 
